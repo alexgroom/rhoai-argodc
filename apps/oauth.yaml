@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: service-mesh
+  name: oauth-htpasswd
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: 'https://github.com/agroom/rhoai-argodc.git'
     targetRevision: main
-    path: apps/service-mesh
+    path: apps/oauth
   destination:
     server: 'https://kubernetes.default.svc'
-    namespace: openshift-operators
+    namespace: openshift-config
   syncPolicy:
     automated:
       prune: true
