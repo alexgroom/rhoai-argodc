@@ -1,0 +1,6 @@
+apiVersion: operators.coreos.com/v1
+kind: OperatorGroup
+metadata:
+  annotations:
+  name: serverless-operators
+  namespace: openshift-serverless
