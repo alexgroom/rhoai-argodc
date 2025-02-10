@@ -2,11 +2,11 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: openshift-ai-dependencies
-  namespace: argocd
+  namespace: openshift-gitops
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/agroom/rhoai-argdodc.git'
+    repoURL: 'https://github.com/agroom/rhoai-argodc.git'
     targetRevision: main
     path: apps  # Folder containing the YAML files
   destination:
