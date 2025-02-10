@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/agroom/rhoai-argodc.git'
+    repoURL: 'https://github.com/alexgroom/rhoai-argodc.git'
     targetRevision: main
     path: apps/serverless
   destination:
