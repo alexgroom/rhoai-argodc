@@ -4,7 +4,8 @@ metadata:
   name: authorino
   namespace: openshift-operators
 spec:
-  channel: stable
+  channel: tech-preview-v1
   name: authorino
-  source: operatorhubio-catalog
   sourceNamespace: openshift-marketplace
+  source: openshift-operators
+  startingCSV: authorino.1.0.2
