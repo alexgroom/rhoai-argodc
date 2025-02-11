@@ -32,9 +32,3 @@ spec:
       managementState: Removed
     workbenches:
       managementState: Managed
-    serviceMesh:
-      controlPlane:
-        metricsCollection: Istio
-        name: data-science-smcp
-        namespace: istio-system
-      managementState: Managed
