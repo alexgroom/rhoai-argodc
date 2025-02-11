@@ -8,4 +8,4 @@ spec:
   name: authorino
   sourceNamespace: openshift-marketplace
   source: redhat-operators
-  startingCSV: authorino.1.0.2
+  startingCSV: authorino.v1.0.2
