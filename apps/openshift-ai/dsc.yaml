@@ -6,6 +6,10 @@ metadata:
     argocd.argoproj.io/sync-wave: '2'
   name: default-dsc
   namespace: redhat-ods-operator
+  labels:
+    app.kubernetes.io/name: datasciencecluster
+    app.kubernetes.io/instance: default-dsc
+    app.kubernetes.io/part-of: rhods-operator
 spec:
   components:
     codeflare:
@@ -16,6 +20,12 @@ spec:
       managementState: Managed
     kserve:
       managementState: Managed
+      serving:
+        ingressGateway:
+          certificate:
+            type: OpenshiftDefaultIngress
+        managementState: Managed
+        name: knative-serving
     kueue:
       managementState: Managed
     modelmeshserving:
