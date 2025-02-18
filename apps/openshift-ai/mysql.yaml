@@ -16,8 +16,6 @@ spec:
     metadata:
       labels:
         deployment: mysql
-      annotations:
-        openshift.io/generated-by: OpenShiftNewApp
     spec:
       volumes:
         - name: mysql-storage
