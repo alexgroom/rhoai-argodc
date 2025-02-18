@@ -23,7 +23,8 @@ spec:
     modelmeshserving:
       managementState: Managed
     modelregistry:
-      managementState: Managed
+        managementState: Managed
+        registriesNamespace: rhoai-model-registries
     ray:
       managementState: Managed
     trainingoperator:
