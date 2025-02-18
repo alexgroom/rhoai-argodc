@@ -5,7 +5,6 @@ metadata:
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
     argocd.argoproj.io/sync-wave: '2'
   name: default-dsc
-  namespace: redhat-ods-operator
   labels:
     app.kubernetes.io/name: datasciencecluster
     app.kubernetes.io/instance: default-dsc
