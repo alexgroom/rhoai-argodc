@@ -10,6 +10,9 @@ rules:
 - apiGroups: ["datasciencecluster.opendatahub.io"]
   resources: ["datascienceclusters"]
   verbs: ["*"]
+- apiGroups: ["modelregistry.opendatahub.io"]
+  resources: ["modelregistries"]
+  verbs: ["*"]
 ---
 kind: ClusterRoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
