@@ -5,7 +5,6 @@ metadata:
   namespace: redhat-ods-operator
 spec:
   channel: tech-preview-v1
-  installPlanApproval: Manual
   name: authorino-operator
   source: redhat-operators
   sourceNamespace: openshift-marketplace

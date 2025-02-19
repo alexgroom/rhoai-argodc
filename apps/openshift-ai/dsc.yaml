@@ -37,6 +37,6 @@ spec:
     trainingoperator:
       managementState: Removed
     trustyai:
-      managementState: Removed
+      managementState: Managed
     workbenches:
       managementState: Managed

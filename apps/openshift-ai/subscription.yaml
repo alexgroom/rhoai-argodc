@@ -8,5 +8,4 @@ spec:
   name: rhods-operator
   source: redhat-operators
   sourceNamespace: openshift-marketplace
-  installPlanApproval: Manual
   startingCSV: rhods-operator.2.16.0
