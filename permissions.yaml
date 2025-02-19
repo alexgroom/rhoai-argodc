@@ -5,7 +5,10 @@ metadata:
   name: secrets-cluster-role
 rules:
 - apiGroups: [""]
-  resources: ["secrets", "datasciencecluster.opendatahub.io"]
+  resources: ["secrets"]
+  verbs: ["*"]
+- apiGroups: ["datasciencecluster.opendatahub.io"]
+  resources: ["datascienceclusters"]
   verbs: ["*"]
 ---
 kind: ClusterRoleBinding

@@ -8,7 +8,7 @@ spec:
   config:
     env:
       - name: ARGOCD_CLUSTER_CONFIG_NAMESPACES
-        value: 'openshift-gitops, redhat-ods-operator'
+        value: 'openshift-gitops, redhat-ods-operator, openshift-authentication, openshift-config'
   installPlanApproval: Automatic
   name: openshift-gitops-operator
   source: redhat-operators
