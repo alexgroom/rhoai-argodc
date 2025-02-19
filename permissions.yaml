@@ -26,3 +26,10 @@ roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
   name: secrets-cluster-role
+---
+kind: Group
+apiVersion: user.openshift.io/v1
+metadata:
+  name: rhods-admins
+users:
+  - opentlc-mgr
