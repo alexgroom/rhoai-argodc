@@ -4,8 +4,8 @@ metadata:
   name: authorino-operator
   namespace: authorino-operator
 spec:
-  channel: tech-preview-v1
+  channel: authorino-operator.v1.2.2
   name: authorino-operator
   source: redhat-operators
   sourceNamespace: openshift-marketplace
-  startingCSV: authorino-operator.v1.0.2
+  startingCSV: authorino-operator.v1.2.2
