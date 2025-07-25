@@ -4,7 +4,7 @@ metadata:
   name: authorino-operator
   namespace: authorino-operator
 spec:
-  channel: authorino-operator.v1.2.2
+  channel: stable
   name: authorino-operator
   source: redhat-operators
   sourceNamespace: openshift-marketplace
