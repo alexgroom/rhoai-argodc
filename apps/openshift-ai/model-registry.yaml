@@ -1,28 +1,14 @@
-apiVersion: components.platform.opendatahub.io/v1alpha1
+apiVersion: modelregistry.opendatahub.io/v1beta1
 kind: ModelRegistry
 metadata:
   annotations:
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
     argocd.argoproj.io/sync-wave: '3'
-  name: default-modelregistry
+  name: my-model-registry
   namespace: rhoai-model-registries
 spec:
   grpc:
     port: 9090
-  istio:
-    gateway:
-      grpc:
-        gatewayRoute: enabled
-        port: 443
-        tls:
-          mode: SIMPLE
-      istioIngress: ingressgateway
-      rest:
-        gatewayRoute: enabled
-        port: 443
-        tls:
-          mode: SIMPLE
-    tlsMode: ISTIO_MUTUAL
   mysql:
     database: registry
     host: mysql.rhoai-model-registries.svc.cluster.local
@@ -32,6 +18,10 @@ spec:
     port: 3306
     skipDBCreation: false
     username: mysql
+  oauthProxy:
+    port: 8443
+    routePort: 443
+    serviceRoute: enabled
   rest:
     port: 8080
     serviceRoute: disabled
