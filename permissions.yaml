@@ -13,6 +13,9 @@ rules:
 - apiGroups: ["modelregistry.opendatahub.io"]
   resources: ["modelregistries"]
   verbs: ["*"]
+- apiGroups: ["opendatahub.io"]
+  resources: ["odhdashboardconfigs"]
+  verbs: ["*"]
 ---
 kind: ClusterRoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
