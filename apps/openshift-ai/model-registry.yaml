@@ -4,7 +4,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
     argocd.argoproj.io/sync-wave: '3'
-  name: default-model-registry
+  name: default-modelregistry
   namespace: rhoai-model-registries
 spec:
   grpc:
